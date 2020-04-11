@@ -1,0 +1,18 @@
+---
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: npm install; npm test
+    files:   
+      - unit.xml
+  ide_config:
+    default_open_files:
+    - app/index.js
+    - index.html
+    project_menu:
+      run: npm start
+      install: npm install
+      test: npm test
+  readonly_paths:
+    - test/index.test.js
